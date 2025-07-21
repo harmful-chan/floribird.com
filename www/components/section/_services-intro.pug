@@ -1,0 +1,26 @@
+include ../breadcrumb/_breadcrumb
+include ../counter/_counter
+
+// Intro
+section.section.section-sm.section-layer.pb-1( data-preset!={ title:'Intro', category:'counter', reload:true, id:'intro-16' } )
+	.bg-layer.bg-image.novi-background( style='bottom: 13.6%; background-image: url(images/services-01-1920x772.jpg);' )
+	.container
+		.context-dark
+			+breadcrumb( breadcrumbs )
+			.row.row-offset-xl.novi-disabled
+				.col-lg-8.col-xl-7.col-xxl-9
+					h1 We will take care of your property’s security systems regardless of their complexity
+					h5 We are not afraid of difficult tasks –
+						| #[br.d-none.d-xs-block]
+						| hundreds of our satisfied clients can prove that.
+		.row.row-30( style='margin-top: 10.6%;' )
+			.col-6.col-xs-5.col-md-4.col-lg-3
+				+counter({
+					value: 1255,
+					title: 'Satisfied customers'
+				}).counter-boxed
+			.col-6.col-xs-5.col-md-4.col-lg-3
+				+counter({
+					value: 935,
+					title: 'Locks installed'
+				}).counter-boxed.counter-boxed-primary-gradient

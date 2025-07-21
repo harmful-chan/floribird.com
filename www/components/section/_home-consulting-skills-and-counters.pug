@@ -1,0 +1,27 @@
+include ../progress-linear/_progress-liear
+include ../counter/_counter
+
+// Skills and counters
+section.section.section-xxl.section-boxed.context-dark.bg-image.novi-background( style='background-image: url( images/home-03-1840x885.jpg )', data-preset!={ title:'Skills', category:'infographics', reload:true, id:'skills-2' } )
+	.container
+		.row.row-40.justify-content-lg-between.novi-disabled
+			.col-md-5( data-animate!={ class: 'fadeInUp' } )
+				h2 Our technicians are equipped with the latest modern technology and are available 24/7 at your request.
+				p We are always ready to help you protect your property and business.
+			.col-md-7.col-lg-6
+				.row.row-40.row-xl-70
+					.col-auto.col-xs-6
+						+counter({
+							value: 935,
+							title: 'Security systems'
+						})
+					.col-auto.col-xs-6
+						+counter({
+							value: 236,
+							title: 'Premises secured'
+						}).counter-border-decor
+					.col-auto.col-xs-6
+						+counter({
+							value: 1255,
+							title: 'Satisfied customers'
+						})

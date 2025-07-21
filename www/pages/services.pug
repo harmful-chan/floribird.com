@@ -1,0 +1,15 @@
+extends ../components/base/_skeleton
+include ../components/rd-navbar/_rd-navbar-app
+
+block variables
+	- pageName = 'Services';
+
+block page
+	+rd-navbar
+
+	include ../components/section/_services-intro
+	include ../components/section/_about-solutions
+	include ../components/section/_divider-section
+	include ../components/section/_services-why-choose-us
+	include ../components/section/_about-cta
+	include ../components/footer/_footer-app

@@ -1,0 +1,25 @@
+include ../person/_person
+
+// Our founders
+section.section.section-lg.bg-transparent.novi-background( data-preset!={ title:'Our Founders', category:'person', reload:false, id:'our-founders' } )
+	.container
+		h4 Our team
+		.row.row-30.row-offset-sm
+			.col-xs-6.col-md-4
+				+person({
+					img: 'persons/person-04-400x400',
+					title: 'Michael Lee',
+					subtitle: 'Owner, CEO'
+				}).person-lg
+			.col-xs-6.col-md-4
+				+person({
+					img: 'persons/person-05-400x400',
+					title: 'Peter Watson',
+					subtitle: 'Security technician'
+				}).person-lg
+			.col-xs-6.col-md-4
+				+person({
+					img: 'persons/person-06-400x400',
+					title: 'Will Jones',
+					subtitle: 'Surveillance expert'
+				}).person-lg

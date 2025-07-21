@@ -1,0 +1,32 @@
+include ../blurb/_blurb
+
+// Why choose us
+section.section.section-lg.bg-transparent.novi-background( data-preset!={ title:'Why Us', category:'blurb', reload:false, id:'why-us-1' } )
+	.container
+		.row.row-30.row-md-40.justify-content-xl-between.novi-disabled
+			.col-xs-9.col-md-6.col-lg-5( data-animate!={ class: 'fadeInUp' } )
+				+img( 'home-02-560x670' )
+			.col-lg-7.col-xl-6( data-animate!={ class: 'fadeInRight' } )
+				h2 Why people choose the security products and solutions by Introl
+				.row.row-40.row-lg-50
+					.col-12.col-xs-6
+						+blurb-classic({
+							title: 'Advanced Security Systems',
+							text: 'We use the latest in technically advanced access control systems to protect you.'
+						}).blurb-classic
+					.col-12.col-xs-6
+						+blurb-classic({
+							title: 'Total Security Approach',
+							text: 'Our qualified team provides a complete security system for your home or business.'
+						}).blurb-classic
+					.col-12.col-xs-6
+						+blurb-classic({
+							title: 'Innovative Security Technologies',
+							text: 'We provide only the most reliable products based on the latest security techologies.'
+						}).blurb-classic
+					.col-12.col-xs-6
+						+blurb-classic({
+							title: 'Outstanding Customer Service',
+							text: 'The exceptional level of service and attention to detail are the key principles of our work.'
+						}).blurb-classic
+				a.btn.btn-lg.btn-primary( href='#' ) Read more

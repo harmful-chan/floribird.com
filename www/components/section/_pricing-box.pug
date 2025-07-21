@@ -1,0 +1,37 @@
+include ../multiswitch/_multiswitch
+include ../pricing/_pricing
+
+// Pricing box
+section.section.section-lg.bg-transparent.novi-background( data-preset!={ title:'Pricing Box', category:'price', reload:true, id:'pricing-box' } )
+	.container
+		h2.text-center Pricing plans
+		p.text-center Check out the affordable pricing packages of the solutions we offer.
+		.row.row-30.align-items-end.novi-disabled
+			.col-lg-4
+				+pricing-box({
+					title: 'Private security',
+					subtitle: 'Personal security and support',
+					price: '199',
+					valueMeta: 'Single security guard and equipment',
+					list: [ 'Security guard', 'Surveillance system', 'Alarm installation' ]
+				})
+
+			.col-lg-4
+				+pricing-box({
+					label: 'Most popular',
+					title: 'Housing security',
+					subtitle: 'Protect your property',
+					price: '299',
+					valueMeta: 'Single security guard and equipment',
+					list: [ 'Surveillance installation', 'Internet security', 'Alarm maintenance' ]
+				}).pricing-box-accent-gradient
+
+			.col-lg-4
+				+pricing-box({
+					title: 'Business security',
+					subtitle: '#1 solution for your business',
+					price: '850',
+					valueMeta: 'Business and building security',
+					list: [ 'Armed/Unarmed guard', 'Fingerprinting', 'Security essentials' ]
+				})
+

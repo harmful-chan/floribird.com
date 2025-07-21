@@ -1,0 +1,60 @@
+-
+	var
+			logo = {
+				default: 'logo-default-89x26.svg',
+				inverse: 'logo-inverse-89x26.svg',
+				name:    'Intense'
+			},
+			
+			buyLink = 'https://www.templatemonster.com/intense-multipurpose-html-template.html',
+			
+			menu = {
+				type:  'root',
+				child: [
+					{
+						title: 'Home',
+						link:  'index.html',
+						home:  true
+					},
+
+					{ title: 'About us' },
+					
+					{ title: 'Services' },
+
+					{
+						title: 'Our team',
+						child: {
+							type:  'dropdown',
+							child: [
+								{ title: 'Team member' }
+							]
+						}
+					},
+
+					{
+						title: 'Pages',
+						link:  '#',
+						child: {
+							type:  'dropdown',
+							child: [
+								{ title: '404 Page' },
+								{ title: 'Coming soon' },
+								{ title: 'Clients' },
+								{ title: 'FAQ' },
+								{ title: 'Privacy policy' },
+								{ title: 'Search results' }
+							]
+						}
+					},
+
+					{ title: 'Contact us' },
+				]
+			},
+			
+			homePage,
+			pageName,
+			pageId,
+			pageClass,
+			pageImage,
+			htmlClass,
+			breadcrumbs = [];
